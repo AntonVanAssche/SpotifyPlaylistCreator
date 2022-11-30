@@ -53,7 +53,7 @@ def create_playlist():
     query = "https://api.spotify.com/v1/users/" + user_id + "/playlists"
     request_body = json.dumps({
         "name": new_playlist_name,
-        "description": "Playlist created by a BOT! 🤪",
+        "description": new_playlist_description,
         "public": "true"
     })
     response = requests.post(query, data=request_body, headers={
@@ -103,6 +103,7 @@ if __name__ == "__main__":
 
     if action == "create":
         new_playlist_name = input("Enter a playlist name: ")
+        new_playlist_description = input("Enter a playlist description: ")
 
     # Start scraping the playlist.
     find_songs()
