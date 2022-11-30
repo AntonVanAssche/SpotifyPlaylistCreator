@@ -2,6 +2,8 @@
 
 Create a playlist on Spotify and add all songs from another to it.
 
+**NOTE**: Only the first 100 songs will be added to the playlist.
+
 ## Usage
 
 ```
